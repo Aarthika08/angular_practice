@@ -1,3 +1,4 @@
+// example of template inline --component
 import { Component } from '@angular/core';
 
 @Component({
@@ -31,6 +32,6 @@ public msg='';
 constructor(){}
 handleClick(event: Event){
   console.log(event.type)
-  this.msg="This is the example program to implement  the two way binding.This is the example program to implement  the two way bindingThis is the example program to implement  the two way bindingThis is the example program to implement  the two way bindingThis is the example program to implement  the two way bindingThis is the example program to implement  the two way bindingThis is the example program to implement  the two way bindingThis is the example program to implement  the two way bindingThis is the example program to implement  the two way binding";
+  this.msg="This is the example program to implement  component -tempate inline";
 }
 }
