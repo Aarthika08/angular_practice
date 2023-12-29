@@ -1,4 +1,4 @@
-#component
+# component
 
 template + class + Metadata
 (view)    (code)    (decorator)
