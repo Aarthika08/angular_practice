@@ -1,0 +1,16 @@
+*{
+    margin: 40px;
+    padding: 60px;
+}
+body{
+    background-color: rgb(100, 149, 204);
+    text-align: center;
+    /* width: 50%; */
+    border: solid black 2px;
+}
+
+button{
+    background-color: aqua;
+    border: solid black 2px;
+
+}
