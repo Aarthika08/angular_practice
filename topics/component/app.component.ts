@@ -1,7 +1,8 @@
+//example of templateUrl and styleurl  with filename type
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: '[app-root]',// attribute
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
