@@ -9,13 +9,18 @@ template + class + Metadata
 
 >import { Component } from '@angular/core';
 >
+>
 >@Component({
+>
 >
 >  selector: 'app-root',                      //->custome html tag
 >
+>
 >  templateUrl: './app.component.html',        //-> view
 >
+>
 >  styleUrls: ['./app.component.css']          //->style
+>
 >
 >})
 >
