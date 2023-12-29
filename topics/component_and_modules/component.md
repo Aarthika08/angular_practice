@@ -54,3 +54,59 @@ different ways to specify the style
 1.with filename
 2.style inline
 3.style inline with maximum lines (backtik)
+
+#module
+
+module is like a container which contains many components 
+
+**code**
+
+>import { NgModule } from '@angular/core';
+>
+>
+>import { BrowserModule } from '@angular/platform-browser';
+>
+>
+>import{FormsModule} from '@angular/forms'
+>
+>
+>import { AppRoutingModule } from './app-routing.module';
+>
+>
+>import { AppComponent } from './app.component';
+>
+>import { TestComponent } from './test/test.component';
+>
+>@NgModule({
+>
+>
+>declarations: [
+>
+>    AppComponent,
+>
+>    TestComponent
+>
+>  ],
+>
+>
+>  imports: [
+>
+>
+>    BrowserModule,
+>
+>    AppRoutingModule,FormsModule
+>
+>
+>  ],
+>
+>
+>  providers: [],
+>
+>
+>
+>  bootstrap: [AppComponent]})
+>
+>
+>export class AppModule { }
+
+
