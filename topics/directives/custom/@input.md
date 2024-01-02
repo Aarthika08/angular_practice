@@ -39,9 +39,11 @@ In HTML
 <app-example [inputText]="parentText"></app-example>
 
 >[!Important Points:]
->> [!IMPORTANT]
->> 
 >
+
+> [!IMPORTANT]
+> 
+
 Binding Syntax: When using an input property, you need to use square brackets ([]) to bind the property to an expression in the parent component's template.
 
 Data Flow: Input properties allow data to flow from a parent component to a child component. Changes in the parent component are reflected in the child component.
