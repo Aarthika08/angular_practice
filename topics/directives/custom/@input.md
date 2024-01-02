@@ -39,6 +39,8 @@ In HTML
 <app-example [inputText]="parentText"></app-example>
 
 >[!Important Points:]
+>> [!IMPORTANT]
+>> 
 >
 Binding Syntax: When using an input property, you need to use square brackets ([]) to bind the property to an expression in the parent component's template.
 
