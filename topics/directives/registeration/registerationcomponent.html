@@ -1,0 +1,49 @@
+<p>registration works!</p>
+<!-- registration.component.html -->
+
+<div class="registration-container">
+    <h2>Register</h2>
+    <!-- Add registration form and directives here -->
+    <h2>Register</h2>
+    <form (ngSubmit)="register()" #registrationForm="ngForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="user.username" [ngModelOptions]="{standalone: true}" required>
+    <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+      <label for="password">password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
+   
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" [(ngModel)]="user.gender">
+        <option *ngFor="let option of genderOptions" [value]="option">{{ option }}</option>
+      </select>
+  
+      <div *ngIf="user.gender === 'female'">
+        <!-- Show additional fields for females -->
+        <label for="lipstick">lipstick color:</label>
+        <input type="text" id="lipstick" name="lipstick" [(ngModel)]="user.lipstick">
+      </div>
+  
+      <label for="country">Country:</label>
+      <select id="country" name="country" [(ngModel)]="user.country">
+        <option *ngFor="let option of countryOptions" [value]="option">{{ option }}</option>
+      </select>
+  
+      <div [ngSwitch]="user.gender">
+        <div *ngSwitchCase="'male'">Welcome, Sir!</div>
+        <div *ngSwitchCase="'female'">Welcome, Madam!</div>
+        <div *ngSwitchCase="'other'">Welcome, Friend!</div>
+        <div *ngSwitchDefault>Welcome!</div>
+      </div>
+  
+      <label>
+        <input type="checkbox" [(ngModel)]="user.receiveNewsletter"> Subscribe to Newsletter
+      </label>
+  
+      <button type="submit" [ngClass]="{'disabled': !user.username || !user.email || !user.password}">
+        Register
+        </button>
+   
+    </form>
+  </div>
+  
