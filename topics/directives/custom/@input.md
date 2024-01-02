@@ -14,22 +14,32 @@ defaultValue: This is an optional parameter that allows you to set a default val
 
 **Example**
 
-import { Component, Input } from '@angular/core';
-@Component({
-  selector: 'app-example',
-  template: `
-    <p>{{ inputText }}</p>
-  `,
-})
-export class ExampleComponent {
-  @Input() inputText: string = 'Default Text';
-}
+>import { Component, Input } from '@angular/core';
+>
+>@Component({
+>
+>  selector: 'app-example',
+>
+>  template: `
+>
+>    <p>{{ inputText }}</p>
+>
+>  `,
+>
+>})
+>
+>export class ExampleComponent {
+>
+>  @Input() inputText: string = 'Default Text';
+>
+>}
 
 In HTML
 
 <app-example [inputText]="parentText"></app-example>
 
-[!Important Points:]
+>[!Important Points:]
+>
 Binding Syntax: When using an input property, you need to use square brackets ([]) to bind the property to an expression in the parent component's template.
 
 Data Flow: Input properties allow data to flow from a parent component to a child component. Changes in the parent component are reflected in the child component.
