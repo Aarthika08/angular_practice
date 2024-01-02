@@ -47,3 +47,19 @@ Binding Syntax: When using an input property, you need to use square brackets ([
 Data Flow: Input properties allow data to flow from a parent component to a child component. Changes in the parent component are reflected in the child component.
 
 Default Values: You can provide a default value for an input property by assigning a value during its declaration.
+
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
