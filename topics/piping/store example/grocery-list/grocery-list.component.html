@@ -1,0 +1,32 @@
+<!-- <p>grocery-list works!</p>
+
+<div>
+    <h2>Grocery List</h2>
+    <label>Show price As:</label>
+     <input type="checkbox" [(ngModel)]="showPriceAsPercentage" (change)="togglePriceDisplay"> 
+    <input type="checkbox" [(ngModel)]="showPriceAsPercentage" (change)="togglePriceDisplay()" /> Percentage
+
+    <ul>
+        <li *ngFor="let item of groeryItems">
+            {{item.name}}--{{ item.price | currency:'USD': 'symbol'}}({{ item.price | percent: '1.2-2'}} of total)
+
+        </li>
+    </ul>
+    <p>Total: {{ calculateTotal() | currency: 'USD': 'symbol' }}</p>
+
+</div> -->
+
+<div>
+    <h2>Grocery List</h2>
+    <label>Show Prices As:</label>
+    <input type="checkbox" [(ngModel)]="showPricesAsPercentage" (change)="togglePriceDisplay()" /> Percentage
+    <ul>
+      <li *ngFor="let item of groceryItems">
+        {{ item.name }} - 
+        {{ item.price | currency: 'USD': 'symbol' }} 
+        ({{ showPricesAsPercentage ? (item.price | percent: '1.2-2') : item.price | number: '1.2-2' }} of total)
+      </li>
+    </ul>
+    <p>Total: {{ calculateTotal() | currency: 'USD': 'symbol' }}</p>
+  </div>
+  
