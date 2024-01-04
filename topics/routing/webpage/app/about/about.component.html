@@ -1,0 +1,24 @@
+<!-- <h1>carousel academy</h1>
+<div style="width:500px;height:200px;margin:0 auto">
+<image-slider [slides]="slides"></image-slider>
+</div> -->
+
+<div class="slider">
+    <div>
+      <div (click)="goToPrevious()" class="leftArrow">❰</div>
+      <div (click)="goToNext()" class="rightArrow">❱</div>
+    </div>
+    <div
+      class="slide"
+      [ngStyle]="{ 'background-image': getCurrentSlideUrl() }"
+    ></div>
+    <div class="dotsContainer">
+      <div
+        *ngFor="let slide of slides; let slideIndex = index"
+        class="dot"
+        (click)="goToSlide(slideIndex)"
+      >
+        ●
+      </div>
+    </div>
+  </div>

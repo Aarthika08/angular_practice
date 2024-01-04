@@ -1,0 +1,66 @@
+/* Add the following styles to your existing CSS */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .fade {
+    animation: fade 2s ease-in-out infinite;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    max-width: 400px;
+    margin: 20px;
+  }
+
+  
+/* home.component.css */
+
+/* .mySlides {
+    display: none;
+  }
+  
+  .fade {
+    animation: fade 1s ease-in-out;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+   */
+
+   .mySlides {
+    display: none;
+    border: 1px solid red; /* Add this line for testing */
+  }
+  
+  .fade {
+    animation: fade 1s ease-in-out;
+  }
+  

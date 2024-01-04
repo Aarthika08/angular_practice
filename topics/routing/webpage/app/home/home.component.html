@@ -1,0 +1,87 @@
+<!-- home.component.html -->
+
+<div class="container">
+    <mat-toolbar color="primary">
+      <span>Welcome to our Angular SPA</span>
+      <span class="spacer"></span>
+      <a mat-button routerLink="/about">About</a>
+      <a mat-button routerLink="/contact">Contact</a>
+    </mat-toolbar>
+    <div *ngFor="let image of images; let i = index" class="mySlides" [class.fade]="i === currentSlide">
+        <img *ngIf="i === currentSlide" [src]="image" alt="Slide {{ i + 1 }}">
+      </div>
+      
+    <div class="slideshow-container">
+      <!-- <div *ngFor="let image of images; let i = index" class="mySlides" [class.fade]="i === currentSlide">
+        <img [src]="image" alt="Slide {{ i + 1 }}">
+      </div> -->
+      <div *ngFor="let image of images; let i = index" class="mySlides" [class.fade]="i === currentSlide">
+        <img [src]="image" alt="Slide {{ i + 1 }}">
+        <p>Debug: {{ i }}</p>
+      </div>
+      
+    </div>
+  
+
+<div class="card-container">
+
+
+<div class="container">
+    <mat-toolbar color="primary">
+      <span>Welcome to our Angular SPA</span>
+      <span class="spacer"></span>
+      <a mat-button routerLink="/about">About</a>
+      <a mat-button routerLink="/contact">Contact</a>
+    </mat-toolbar>
+  
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="assets/slide1.jpg" alt="Slide 1">
+      </div>
+  
+      <div class="mySlides fade">
+        <img src="assets/slide2.jpg" alt="Slide 2">
+      </div>
+  
+      <div class="mySlides fade">
+        <img src="assets/slide3.jpg" alt="Slide 3">
+      </div>
+    </div>
+  
+    <div class="card-container">
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Card 1</mat-card-title>
+          <mat-card-subtitle>Subtitle</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="assets/card1.jpg" alt="Card 1">
+        <mat-card-content>
+          <p>Description of Card 1.</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>Learn More</button>
+        </mat-card-actions>
+      </mat-card>
+  
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Card 2</mat-card-title>
+          <mat-card-subtitle>Subtitle</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="assets/card2.jpg" alt="Card 2">
+        <mat-card-content>
+          <p>Description of Card 2.</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>Learn More</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+
+
+</div>
+</div>
