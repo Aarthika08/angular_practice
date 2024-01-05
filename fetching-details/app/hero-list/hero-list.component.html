@@ -1,0 +1,15 @@
+<h2>Heroes List</h2>
+<ul>
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+    {{ hero.name }}
+    <div *ngIf="hero">
+      <h2>{{ hero.name }} Details</h2>
+      <p>ID: {{ hero.id }}</p>
+      <p>Name: {{ hero.name }}</p>
+    </div>
+  </li>
+</ul>
+
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+By M.Aarthika this example includes service,pipes,directives etc...
+
